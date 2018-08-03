@@ -8,7 +8,7 @@ example: (network with 3 layers - sizes 3, 10, 2)
 network = ML.createNetwork([3,10,2])
 ```
  
-Then you can learn the network using training data.
+The network can learn the training data.
 
 ```python
 inputs = [[0,0,0],
