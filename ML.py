@@ -10,7 +10,7 @@ def saveNetwork(network, filename):
 	return out
 
 def openNetwork(filename):
-	if filename.endswith(".npy"):
+	if not filename.endswith(".npy"):
 		filename += ".npy"
 
 	network = np.load(filename)
