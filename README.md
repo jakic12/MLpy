@@ -8,7 +8,7 @@ example: (network with 3 layers - sizes 3, 10, 2)
 network = ML.createNetwork([3,10,2])
 ```
  
-The network can learn the training data.
+The network can then learn the training data.
 
 ```python
 inputs = [[0,0,0],
@@ -24,7 +24,7 @@ expectedOutput = [[0,0],[0,1],[1,1],[1,0],[1,0],[1,1],[0,1],[0,0]]
 
 network = learn(network, inputs, expectedOutput, epocs=10000)
 ```
-the learn function will repeat the process of forward and backward propagation, utill it meets a desired goal. The goal can either be:
+the learn function will repeat the process of forward and backward propagation, untill it meets a desired goal. The goal can either be:
 1. number of iterations (epocs)
 ```python
 network = learn(network, inputs, expectedOutput, epocs=10000)
@@ -35,14 +35,14 @@ network = learn(network, inputs, expectedOutput, costLimit=0.01)
 ```
 
 
-When the network is learned, you can use the network with the forwardPropagate function
+When the network is taught, you can use the network with the forwardPropagate function
 ```python
 print(forwardPropagate(network, [0,1,1]))
 ```
 The forwardPropagate function will return an array, the size of the last layer
 
 
-You can also manually learn the network:
+You can also manually teach the network:
 
 1. you have to forward propagate a training sample:
 ```python
@@ -55,7 +55,7 @@ The forwardPropagate function must be set to learning=True, so it will return th
 network = backpropagate(network, expectedOutputData[0])
 ```
 
-When the network is learned, you can save the network:
+When the network is taught, you can save the network:
 ```python
 ML.saveNetwork(network, "filename")
 ```
