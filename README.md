@@ -54,3 +54,12 @@ The forwardPropagate function must be set to learning=True, so it will return th
 ```python
 network = backpropagate(network, expectedOutputData[0])
 ```
+
+When the network is learned, you can save the network:
+```python
+ML.saveNetwork(network, "filename")
+```
+To open a network:
+```python
+ML.openNetwork("filename")
+```
