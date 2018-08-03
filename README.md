@@ -1,4 +1,4 @@
-# MLpy
+# ML.py
 python library to create, use and learn neural networks
 
 
